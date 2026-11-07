@@ -133,7 +133,7 @@ PyBaMM is available as a conda package through the conda-forge channel.
 conda install -c conda-forge pybamm-base
 # for all extra dependencies except jax
 conda install -c conda-forge pybamm
-# optionally install jax >=0.7.0, <0.9.0 on python >=3.11
+# optionally install jax >=0.7.0, <0.9.0
 conda install -c conda-forge "jax>=0.7.0,<0.9.0"
 ```
 
@@ -142,6 +142,14 @@ conda install -c conda-forge "jax>=0.7.0,<0.9.0"
 The following solvers are optionally available:
 
 - [jax](https://jax.readthedocs.io/en/latest/notebooks/quickstart.html)-based solver, see [the documentation](https://docs.pybamm.org/en/latest/source/user_guide/installation/index.html#optional-jaxsolver).
+
+### Model zoo
+
+Community- and partner-contributed models are distributed separately, in the [model zoo](https://docs.pybamm.org/en/latest/source/model_zoo/index.html):
+
+```bash
+pip install pybamm-model-zoo
+```
 
 ## 📖 Citing PyBaMM
 
@@ -171,7 +179,7 @@ We would be grateful if you could also cite the relevant papers. These will chan
 pybamm.print_citations()
 ```
 
-to the end of your script. This will print BibTeX information to the terminal; passing a filename to `print_citations` will print the BibTeX information to the specified file instead. A list of all citations can also be found in the [citations file](https://github.com/pybamm-team/PyBaMM/blob/main/src/pybamm/CITATIONS.bib). In particular, PyBaMM relies heavily on [CasADi](https://web.casadi.org/publications/).
+to the end of your script. This will print BibTeX information to the terminal; passing a filename to `print_citations` will print the BibTeX information to the specified file instead. A list of all citations can also be found in the [citations file](https://github.com/pybamm-team/PyBaMM/blob/main/packages/pybamm/src/pybamm/CITATIONS.bib). In particular, PyBaMM relies heavily on [CasADi](https://web.casadi.org/publications/).
 See [CONTRIBUTING.md](https://github.com/pybamm-team/PyBaMM/blob/main/CONTRIBUTING.md#citations) for information on how to add your own citations when you contribute.
 
 ## 🛠️ Contributing to PyBaMM
